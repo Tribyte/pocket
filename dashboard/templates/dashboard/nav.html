@@ -1,0 +1,11 @@
+<nav class="flex space-between">
+    <div class="flex h-left v-center">
+        <a href="/dashboard"><button>{% include "landing/svgs/SVG-Campaigns.svg" %}</button></a>
+        <a href="/dashboard"><button>Pocket Campaigns</button></a>
+    </div>
+
+    <div class="flex h-right v-center">
+        <a class="flex v-center" href="https://discord.gg/rD7vnzC"><button>{% include "landing/svgs/discord-icon.svg" %}</button></a>
+        <a class="flex v-center"><button>{{user.username}}</button>{% include "dashboard/svgs/dots-v-icon.svg" %}</a>
+    </div>
+</nav>

@@ -1,0 +1,104 @@
+@import url("variables.css");
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+
+h1, h2, h3, h4, h5, p, button, a, u {
+    color: #fff;
+    font-family: var(--font-family);
+}
+
+h1 {
+    font-size: 3em;
+}
+
+a, button {
+    cursor: pointer;
+}
+
+
+nav {
+    height: var(--nav-height);
+    position: relative;
+    z-index: 1;
+    background-color: #242222;
+}
+
+nav div {
+    height: 100%;
+}
+
+nav a {
+    color: #fff;
+    height: min-content;
+}
+
+nav a button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    font-size: 1.8em;
+}
+
+nav a button .logo {
+    padding: 0 20px;
+    height: 2.5em;
+    width: auto;
+    fill: #fff;
+    font-size: initial;
+    cursor: pointer;
+}
+
+nav div:last-of-type a {
+    height: 100%;
+    transition: 1s ease-in-out;
+}
+
+nav div:last-of-type a:hover {
+    background-color: #343232;
+}
+
+nav div:last-of-type a:last-of-type {
+    padding: 0 20px;
+}
+
+nav div:last-child a button {
+    padding: 0 10px;
+    font-size: 1.4em;
+}
+
+nav div:last-of-type a svg {
+    width: 1.6em;
+    stroke: #fff;
+}
+
+.background {
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 100%;
+    position: fixed !important;
+    overflow-y: hidden;
+    z-index: 0;
+}
+
+.footer-fix {
+    position: relative;
+    z-index: 1;
+    height: calc(100% - var(--nav-height));
+}
+
+.flex { display: flex; }
+.flex-column { flex-direction: column; }
+.space-between { justify-content: space-between; }
+.center { justify-content: center; align-items: center; }
+.h-center { justify-content: center; }
+.v-center { align-items: center; }
+.h-left { justify-content: left; }
+.v-left { align-items: left; }
+.h-right { justify-content: right; }
+.v-right { align-items: right; }
