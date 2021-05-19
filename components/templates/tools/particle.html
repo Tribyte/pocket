@@ -1,0 +1,16 @@
+<div class="particles">
+    <!-- credit Zed Dash https://codepen.io/z-/pen/bpxgWZ -->
+    {% load static %}
+    {% block head %}
+        <link rel="stylesheet" href="{% static 'tools/css/particles.css' %}">
+    {% endblock head %}
+
+    {% block content %}
+        <div class="particletext {{class_name}} {{particle_type}}"></div>
+    {% endblock content %}
+
+    {% block js %}
+        <script type="text/javascript" src="{% static 'tools/js/particles.js' %}"></script>
+        <script>{{particle_type}}()</script>
+    {% endblock js %}
+</div>

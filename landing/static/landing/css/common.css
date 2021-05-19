@@ -1,0 +1,119 @@
+@import url("variables.css");
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+
+h1, h2, h3, h4, h5, p, button, a, u {
+    color: #fff;
+    font-family: var(--font-family);
+}
+
+h1 {
+    font-size: 3em;
+}
+
+nav {
+    height: var(--nav-height);
+    position: relative;
+    z-index: 1;
+    background-color: #242222;
+}
+
+nav div {
+    height: 100%;
+}
+
+nav a {
+    color: #fff;
+    height: min-content;
+}
+
+nav a button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    font-size: 1.8em;
+}
+
+nav a button .logo {
+    padding: 0 20px;
+    height: 2.5em;
+    width: auto;
+    fill: #fff;
+    font-size: initial;
+}
+
+nav div:last-child {
+    padding: 0 20px;
+}
+
+nav div:last-child a button {
+    padding: 0 10px;
+    font-size: 1.4em;
+}
+
+.background {
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 100%;
+    position: fixed !important;
+    overflow-y: hidden;
+    z-index: 0;
+}
+
+.footer-fix {
+    position: relative;
+    z-index: 1;
+    height: calc(100% - var(--nav-height));
+}
+
+.footer-fix svg {
+    width: 12em;
+    fill: #fff;
+}
+
+.footer-fix .logo {
+    width: 20em;
+}
+
+.footer-fix .card {
+    border: 5px solid white;
+    border-radius: 27px;
+    text-align: center;
+    transition: ease-in-out .5s;
+    height: 18em;
+    width: 20em;
+    margin: 0 20px;
+}
+
+.footer-fix .page-buttons {
+    margin-top: 20px;
+}
+
+.footer-fix .page-buttons button {
+    background-color: transparent;
+    border: 0;
+    padding: 5px;
+}
+
+.footer-fix .page-buttons u { font-size: 1.8em; }
+.footer-fix .page-buttons h1 { margin: 0; }
+.footer-fix .page-buttons h2 { margin: 0; }
+
+.flex { display: flex; }
+.flex-column { flex-direction: column; }
+.space-between { justify-content: space-between; }
+.center { justify-content: center; align-items: center; }
+.h-center { justify-content: center; }
+.v-center { align-items: center; }
+.h-left { justify-content: left; }
+.v-left { align-items: left; }
+.h-right { justify-content: right; }
+.v-right { align-items: right; }
+
+.space-top-20 { margin-top: 20px; }
