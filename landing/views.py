@@ -1,6 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 def index(request):
-    context = {}
+    if(request.user.is_authenticated):
+        return redirect("/dashboard")
 
+    context = {}
     return render(request, "landing/index.html", context)

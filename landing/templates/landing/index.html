@@ -10,23 +10,23 @@
     </div>
     <div class="flex">
         <div class="card">
-            <h3>Create</h3>
-            {% include "landing/svgs/create-icon.svg" %}
+            <div class="flex center"><h3>Create</h3></div>
+            <div class="flex center">{% include "landing/svgs/create-icon.svg" %}</div>
             {% comment %} <p>Pocket Campaign is a simple GM's tool to convert your ideas into easy-to-manage decks and cards. A card may represent a character, location, plot hook or really anything else you can think of. Give your card a name, add notes and identifiers to describe it.</p> {% endcomment %}
         </div>
         <div class="card">
-            <h3>Organize</h3>
-            {% include "landing/svgs/organize-icon.svg" %}
+            <div class="flex center"><h3>Organize</h3></div>
+            <div class="flex center">{% include "landing/svgs/organize-icon.svg" %}</div>
             {% comment %} <p>Cards are sorted under Campaign Decks. Each deck has it's own custom set of tags that you define. Tag each card entry with all that apply, and search by them. Cards automatically link to each other if they find another card's name in their notes or descriptions, creating a smooth flow or even adventure track.</p> {% endcomment %}
         </div>
         <div class="card">
-            <h3>Play</h3>
-            {% include "landing/svgs/sick-play-icon.svg" %}
+            <div class="flex center"><h3>Play</h3></div>
+            <div class="flex center">{% include "landing/svgs/sick-play-icon.svg" %}</div>
             {% comment %} <p>Decks and cards can both be shared and imported by other users. These exports can be password-locked, and even set to delete their secret notes when imported without the correct password. GMs can keep their players up to date on all the features of their world without giving anything away.</p> {% endcomment %}
         </div>
     </div>
     <div class="page-buttons flex flex-column">
         <a class="flex center"><button><h1>Get Started &#62;</h1></button></a>
-        <a class="flex center"><button><h2><u>or Log In</u></h2></button></a>
+        <a class="flex center" href="login"><button><h2><u>or Log In</u></h2></button></a>
     </div>
 {% endblock content %}

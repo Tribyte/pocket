@@ -1,6 +1,11 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from . import models
 
 def index(request):
-    context = {}
+    if(not request.user.is_authenticated):
+        return redirect("/")
 
-    return render(context, "dashboard/index.html", request)
+    context = {
+        "campaigns": models.Campaign.objects.filter(creator=request.user)
+    }
+    return render(request, "dashboard/index.html", context)

@@ -15,10 +15,14 @@ h1 {
     font-size: 3em;
 }
 
+a, button {
+    cursor: pointer;
+}
+
 nav {
     height: var(--nav-height);
     position: relative;
-    z-index: 1;
+    z-index: 2;
     background-color: #242222;
 }
 
@@ -91,6 +95,21 @@ nav div:last-child a button {
     margin: 0 20px;
 }
 
+.footer-fix .card div:first-child {
+    height: 50px;
+    width: 100%;
+}
+
+.footer-fix .card div:first-child h3 {
+    font-size: 1.8em;
+    margin: 0;
+}
+
+.footer-fix .card div:last-child {
+    width: 100%;
+    height: calc(100% - 50px);
+}
+
 .footer-fix .page-buttons {
     margin-top: 20px;
 }
@@ -115,5 +134,3 @@ nav div:last-child a button {
 .v-left { align-items: left; }
 .h-right { justify-content: right; }
 .v-right { align-items: right; }
-
-.space-top-20 { margin-top: 20px; }

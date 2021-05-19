@@ -1,0 +1,12 @@
+{% extends 'dashboard/base.htm' %}
+{% block head %}
+    <title>Pocket Campaigns - Dashboard</title>
+{% endblock head %}
+
+{% block content %}
+    {% for campaign in campaigns %}
+        <div>
+            <h1>{{campaign}}</h1>
+        </div>
+    {% endfor %}
+{% endblock content %}

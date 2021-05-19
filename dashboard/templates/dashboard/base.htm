@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        {% block head %}
+        {% endblock head %}
+        <link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}"/>
+        <link rel="stylesheet" href="{% static 'dashboard/css/common.css' %}">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    </head>
+    
+    <body>
+        {% include "tools/particle.html" with class_name="background" particle_type="bubbles" %}
+
+        {% include "dashboard/nav.html" %}
+        <div class="footer-fix flex flex-column center">
+            {% block content %}
+            {% endblock content %}
+        </div>
+        {% comment %} {% include "dashboard/footer.html" %} {% endcomment %}
+
+        {% block js %}
+        {% endblock js %}
+        <script type="text/javascript" src="{% static 'tools/js/gradient.js' %}"></script>
+        <script type="text/javascript">GradientInit(".background");</script>
+    </body>
+</html>
